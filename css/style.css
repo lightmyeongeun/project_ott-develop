@@ -36,12 +36,22 @@ body{
     justify-content: center;
 }
 
+.carousel-box section{
+    position: relative;
+}
+
 .carousel-inner{
-    width: 1720px;
     height: 540px;
     margin: 0 10px;
     border-radius: 12px;
-    background-color: #252525;
+}
+
+.multi-carousel .carousel-control-prev{
+    justify-content: flex-start;
+}
+
+.multi-carousel .carousel-control-next{
+    justify-content: flex-end;
 }
 
 
@@ -70,4 +80,88 @@ body{
 .inner-txt.one{
     bottom: 140px;
     font-size: 22px;
+}
+
+
+#container{
+    margin: 0 80px;
+}
+
+.box-title{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.multi-carousel .multi-carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding: 0 3px
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item img {
+    max-height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+@media(max-width: 768px) {
+    .multi-carousel.vertical {
+        height:150px
+    }
+}
+
+
+.card{position: relative;}
+.card .num {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 50px;
+    text-align: center;
+}
+
+.card .num.num_c{
+    background-color: #e86434;
+}
+.card .num.num_g{
+    background-color: #b5b5b5;
+}
+
+.card{
+    border: 0;
+}
+.card .card-body{
+    padding: 20px 0;
+}
+.card .card-body .card-title{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-body .card-subtitle{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card .card-body .card-text{
+    font-size: 14px;
+    color: #9a9a9a;
+    margin-top: 18px;
 }
