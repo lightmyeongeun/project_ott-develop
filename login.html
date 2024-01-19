@@ -7,24 +7,130 @@
     <title> login </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">    
+    <link rel="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://kit.fontawesome.com/b83b43be54.js" crossorigin="anonymous"></script>    
 </head>
 
+<header id="header">
+  <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+              <li class="nav-item">
+              <a class="nav-link" href="#">영화</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">드라마</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="#">애니메이션</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <i class="fa-solid fa-magnifying-glass big" aria-hidden="true"></i>
+              <i class="fa-regular fa-user big" aria-hidden="true"></i>
+          </form>
+          </div>
+      </div>
+  </nav>
+</header>
+    
 <body class="text-center">
     
-    <div class="container">
-      <div id="loginBox">
-        <div id="loginBoxTitle">Login</div>
-        <div id="inputBox">
-          <div class="input-form-box"><span>아이디 </span><input type="text" name="uid" class="form-control"></div>
-          <div class="input-form-box"><span>비밀번호 </span><input type="password" name="upw" class="form-control"></div>
-          <div class="button-login-box" >
-            <button type="button" class="btn btn-primary btn-xs" style="width:100%">로그인</button>
-          </div>
+<section class="py-3 py-md-5 py-xl-8">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="mb-5">
+          <h2 class="display-5 fw-bold text-center">로그인</h2>
+          <p class="text-center m-0"> 계정이 없으세요? <a href="#!"> 회원가입 </a></p>
         </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8">
+        <div class="row gy-5 justify-content-center">
+          <div class="col-12 col-lg-5">
+            <form action="#!">
+              <div class="row gy-3 overflow-hidden">
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control border-0 border-bottom rounded-0" name="email" id="email" placeholder="name@example.com" required>
+                    <label for="email" class="form-label"> 아이디 </label>
+                  </div>
+                </div>
 
-  </body>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control border-0 border-bottom rounded-0" name="password" id="password" value="" placeholder="Password" required>
+                    <label for="password" class="form-label"> 비밀번호 </label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="row justify-content-between">
+                    <div class="col-6">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="remember_me" id="remember_me">
+                          <label class="form-check-label text-secondary" for="remember_me"> 로그인 유지하기 </label>
+                      </div>
+                    </div>
+                      
+                    <div class="col-6">
+                      <div class="text-end">
+                        <a href="#!" class="link-secondary text-decoration-none"> 비밀번호 찾기 </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                  <div class="col-12">
+                    <div class="d-grid">
+                      <button class="btn btn-lg btn-dark rounded-0 fs-6" type="submit"> Login </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-12 col-lg-2 d-flex align-items-center justify-content-center gap-3 flex-lg-column">
+              <div class="bg-dark h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+              <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
+              <div> or </div>
+              <div class="bg-dark h-100 d-none d-lg-block" style="width: 1px; --bs-bg-opacity: .1;"></div>
+              <div class="bg-dark w-100 d-lg-none" style="height: 1px; --bs-bg-opacity: .1;"></div>
+            </div>
+            <div class="col-12 col-lg-5 d-flex align-items-center">
+              <div class="d-flex gap-3 flex-column w-100 ">
+                <a href="#!" class="btn bsb-btn-2xl btn-outline-dark rounded-0 d-flex align-items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google text-danger" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                  </svg>
+                  <span class="ms-2 fs-6 flex-grow-1"> 구글로 시작하기 </span>
+                </a>
+                <a href="#!" class="btn bsb-btn-2xl btn-outline-dark rounded-0 d-flex align-items-center">
+                  <img src="image - 복사본/kakao.png" width="16" height="16">
+                  <span class="ms-2 fs-6 flex-grow-1"> 카카오로 시작하기 </span>
+                </a>
+                <a href="#!" class="btn bsb-btn-2xl btn-outline-dark rounded-0 d-flex align-items-center">
+                  <img src="image - 복사본/naver.png" width="16" height="16">
+                  <span class="ms-2 fs-6 flex-grow-1"> 네이버로 시작하기 </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+    
+</body>
+</html>
