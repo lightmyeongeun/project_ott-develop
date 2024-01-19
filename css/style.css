@@ -1,44 +1,18 @@
 @charset "utf-8";
-body{
-    color: #1b1b1b;
-    overflow-x: hidden;
+
+#container{
+    margin: 0 80px;
 }
 
 section{
     margin-bottom: 70px;
 }
 
-#header{
-    border-bottom: 1px solid #e0e0e0;
-}
-
-
-.container-fluid{
-    padding: 0 50px;
-}
-
-.navbar{
-    padding: 15px 0;
-}
-
-.nav-item a{
-    font-size: 17px;
-    font-weight: 700;
-    color: #000;
-}
-
-.nav-item{
-    padding: 0 20px;
-}
-
-.fa-magnifying-glass, .fa-user{
-    font-size: 25px;
-    padding: 0 20px;
-}
-
+/* 롤링배너 */
 .carousel_wrap{
-width: 100%;
+    width: 100%;
 }
+
 .carousel-box section{
     position: relative;
 }
@@ -49,6 +23,7 @@ width: 100%;
     justify-content: flex-start;
 }
 
+/* 롤링 화살표 */
 .visual .carousel-control-prev,
 .multi-carousel .carousel-control-prev, 
 .open .carousel-control-prev{
@@ -62,6 +37,7 @@ width: 100%;
 }
 
 
+/* 롤링배너 이미지 및 내용 */
 .inner-title{
     position: absolute;
     bottom: 180px;
@@ -90,15 +66,7 @@ width: 100%;
 }
 
 
-#container{
-    margin: 0 80px;
-}
-
-.box-title{
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
+/* 개봉관 순위 배너 */
 .multi-carousel .multi-carousel-inner {
     position: relative;
     width: 100%;
@@ -122,6 +90,11 @@ width: 100%;
     object-fit: cover
 }
 
+/* 포스터 영역 */
+.box-title{
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
 .card{
     position: relative;
@@ -166,3 +139,25 @@ width: 100%;
     color: #808080;
     padding-top: 8px;
 }
+
+
+/* 미디어 쿼리 - 반응형 */
+@media (max-width: 1199.98px){
+    .inner-title{
+        width: 280px;
+    }    
+
+}
+
+@media (max-width: 991.98px){
+    .inner-title{
+        bottom: 30px;
+        left: 60px;
+    }
+    
+    .inner-txt{
+        display: none;
+    }
+
+}
+
