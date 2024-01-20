@@ -8,7 +8,11 @@ section{
     margin-bottom: 70px;
 }
 
+
 /* 롤링배너 */
+.carousel{
+    padding-top: 96px;
+}
 .carousel_wrap{
     width: 100%;
 }

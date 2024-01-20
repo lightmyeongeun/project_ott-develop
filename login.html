@@ -18,24 +18,33 @@
       <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="image/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
-              <li class="nav-item">
-              <a class="nav-link" href="#">영화</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">드라마</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="#">애니메이션</a>
-              </li>
-          </ul>
-          <form class="d-flex" role="search">
-              <i class="fa-solid fa-magnifying-glass big" aria-hidden="true"></i>
-              <i class="fa-regular fa-user big" aria-hidden="true"></i>
-          </form>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">영화</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">드라마</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">애니메이션</a>
+                  </li>
+              </ul>
+              <form class="d-flex search-bar" role="search">
+                  <input class="form-control me-2 ms-4" type="search" placeholder="Search" aria-label="Search" list="searchOptions">
+                  <datalist id="searchOptions">
+                      <option value="#로맨스"></option>
+                      <option value="#애니메이션"></option>
+                      <option value="#독립"></option>
+                      <option value="#애절한"></option>
+                      <option value="#하이틴"></option>
+                      <option value="#기자"></option>
+                  </datalist>
+                  <button class="btn border-none" type="submit"><i class="fa-solid fa-magnifying-glass big" aria-hidden="true"></i></button>
+                  <a href="login.html"><i class="fa-regular fa-user lh-base" aria-hidden="true"></i></a>
+              </form>
           </div>
       </div>
   </nav>
@@ -43,9 +52,9 @@
     
 <body class="text-center">
     
-<section class="py-3 py-md-5 py-xl-8">
+<section class="login-box">
 
-  <div class="container">
+  <div class="container py-3 py-md-5 py-xl-8">
     <div class="row">
       <div class="col-12">
         <div class="mb-5">
