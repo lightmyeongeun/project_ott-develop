@@ -1,39 +1,16 @@
 @charset "utf-8";
-body{
-    color: #1b1b1b;
+
+#container{
+    margin: 0 80px;
 }
 
-#header{
-    border-bottom: 1px solid #e0e0e0;
+section{
+    margin-bottom: 70px;
 }
 
-.container-fluid{
-    padding: 0 50px;
-}
-
-.navbar{
-    padding: 15px 0;
-}
-
-.nav-item a{
-    font-size: 17px;
-    font-weight: 700;
-    color: #000;
-}
-
-.nav-item{
-    padding: 0 20px;
-}
-
-.fa-magnifying-glass, .fa-user{
-    font-size: 25px;
-    padding: 0 20px;
-}
-
-
-.carousel {
-    display: flex;
-    justify-content: center;
+/* 롤링배너 */
+.carousel_wrap{
+    width: 100%;
 }
 
 .carousel-box section{
@@ -41,20 +18,26 @@ body{
 }
 
 .carousel-inner{
-    height: 540px;
-    margin: 0 10px;
     border-radius: 12px;
-}
-
-.multi-carousel .carousel-control-prev{
+    display: flex;
     justify-content: flex-start;
 }
 
-.multi-carousel .carousel-control-next{
+/* 롤링 화살표 */
+.visual .carousel-control-prev,
+.multi-carousel .carousel-control-prev, 
+.open .carousel-control-prev{
+    justify-content: flex-start;
+}
+
+.visual .carousel-control-next,
+.multi-carousel .carousel-control-next, 
+.open .carousel-control-next{
     justify-content: flex-end;
 }
 
 
+/* 롤링배너 이미지 및 내용 */
 .inner-title{
     position: absolute;
     bottom: 180px;
@@ -83,15 +66,7 @@ body{
 }
 
 
-#container{
-    margin: 0 80px;
-}
-
-.box-title{
-    font-weight: 700;
-    margin-bottom: 0;
-}
-
+/* 개봉관 순위 배너 */
 .multi-carousel .multi-carousel-inner {
     position: relative;
     width: 100%;
@@ -110,39 +85,37 @@ body{
 }
 
 .multi-carousel .multi-carousel-inner .multi-carousel-item img {
-    max-height: 200px;
+    max-height: 320px;
     -o-object-fit: cover;
     object-fit: cover
 }
 
-@media(max-width: 768px) {
-    .multi-carousel.vertical {
-        height:150px
-    }
+/* 포스터 영역 */
+.box-title{
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
+.card{
+    position: relative;
+}
 
-.card{position: relative;}
 .card .num {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
+    left: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     color: #fff;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 50px;
+    line-height: 25px;
     text-align: center;
+    border-radius: 5px;
+    background-color: rgba(222, 15, 0, 0.8);
 }
 
-.card .num.num_c{
-    background-color: #e86434;
-}
-.card .num.num_g{
-    background-color: #b5b5b5;
-}
 
 .card{
     border: 0;
@@ -150,18 +123,41 @@ body{
 .card .card-body{
     padding: 20px 0;
 }
-.card .card-body .card-title{
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-}
-.card .card-body .card-subtitle{
-    font-size: 22px;
+
+.card-body .card-title{
+    font-size: 17px;
     font-weight: 700;
 }
 
-.card .card-body .card-text{
-    font-size: 14px;
-    color: #9a9a9a;
-    margin-top: 18px;
+.card-body .card-subtitle{
+    font-size: 15px;
+    padding-top: 8px;
 }
+
+.card-body .card-text{
+    font-size: 15px;
+    color: #808080;
+    padding-top: 8px;
+}
+
+
+/* 미디어 쿼리 - 반응형 */
+@media (max-width: 1199.98px){
+    .inner-title{
+        width: 280px;
+    }    
+
+}
+
+@media (max-width: 991.98px){
+    .inner-title{
+        bottom: 30px;
+        left: 60px;
+    }
+    
+    .inner-txt{
+        display: none;
+    }
+
+}
+
