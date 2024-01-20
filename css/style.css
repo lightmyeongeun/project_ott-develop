@@ -116,6 +116,38 @@ section{
     background-color: rgba(222, 15, 0, 0.8);
 }
 
+.card .ott-icon{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.card .ott-icon.two{
+    right: 44px;
+    font-weight: 600;
+}
+
+.card .ott-icon.tving{
+    background: url(../image/main/tving.png) no-repeat;
+}
+
+.card .ott-icon.netflix{
+    background: url(../image/main/netflix.png) no-repeat;
+}
+
+.card .ott-icon.watcha{
+    background: url(../image/main/watcha.png) no-repeat;
+}
+
 
 .card{
     border: 0;
