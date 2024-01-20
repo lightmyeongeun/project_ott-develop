@@ -18,7 +18,7 @@
   margin-left: 50px;
 }
 
-.card-body {
+.card-body-detail {
   width: 1000px;
   margin-left: 75px;
   color: gray;
@@ -142,4 +142,41 @@
 
 .box-title {
   margin-bottom: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .card-img {
+    width: 380px;
+    height: 250px;
+  }
+
+  .img-fluid {
+    margin-left: 90px;
+  }
+
+  .card-body-detail {
+    width: 350px;
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+  .box-title {
+    text-align: center;
+  }
+  .carousel-box-title {
+    text-align: center;
+  }
+  .card-img-top {
+    margin-left: 60px;
+  }
+  .card-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .card-img {
+    bottom: 30px;
+    left: 60px;
+  }
 }
