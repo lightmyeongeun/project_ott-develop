@@ -1,8 +1,145 @@
-body {
+.card-img {
   width: 100%;
-  height: 100%;
+  height: 600px;
 }
 
-.container {
-  background-color: aqua;
+.card-title-img {
+  font-weight: 700;
+  margin-top: 300px;
+  margin-left: 80px;
+}
+
+.card-text-img {
+  margin-left: 80px;
+}
+
+.img-fluid {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.card-body {
+  width: 1000px;
+  margin-left: 75px;
+  color: gray;
+  font-weight: 600;
+  margin-top: 90px;
+}
+
+.contents {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 200px;
+  padding: 0;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-box section {
+  position: relative;
+}
+
+.carousel-inner {
+  height: 540px;
+  margin: 0 10px;
+  border-radius: 12px;
+}
+
+.multi-carousel .carousel-control-prev {
+  justify-content: flex-start;
+}
+
+.multi-carousel .carousel-control-next {
+  justify-content: flex-end;
+}
+
+.multi-carousel .multi-carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item {
+  display: inline-block;
+  width: 100%;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  padding: 0 3px;
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item img {
+  max-height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .multi-carousel.vertical {
+    height: 150px;
+  }
+}
+
+.card {
+  position: relative;
+}
+.card .num {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+.card .num.num_c {
+  background-color: #e86434;
+}
+.card .num.num_g {
+  background-color: #b5b5b5;
+}
+
+.card {
+  border: 0;
+}
+.card .card-body {
+  padding: 20px 0;
+}
+.card .card-body .card-title {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-body .card-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card .card-body .card-text {
+  font-size: 14px;
+  color: #9a9a9a;
+  margin-top: 18px;
+}
+
+.carousel-box-title {
+  margin-top: 50px;
+  font-weight: 700;
+}
+
+.box-title {
+  margin-bottom: 30px;
 }

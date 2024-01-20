@@ -1,24 +1,203 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    >
+    />
     <link
       href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
       rel="stylesheet"
-    >
-    <link rel="stylesheet" href="css/detail.css">
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/detail.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">최호준</div>
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="image/logo.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+              <li class="nav-item">
+                <a class="nav-link" href="#">영화</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">드라마</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">애니메이션</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <i
+                class="fa-solid fa-magnifying-glass big"
+                aria-hidden="true"
+              ></i>
+              <i class="fa-regular fa-user big" aria-hidden="true"></i>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="card text-bg-dark">
+      <img src="image/외계+인 2부.jpeg" class="card-img" alt="..." />
+      <div class="card-img-overlay">
+        <h1 class="card-title-img">외계+인 2부</h1>
+        <p class="card-text-img">외계+인 2부</p>
+        <p class="card-text-img">2024 • 액션/판타지/SF • 한국</p>
+        <p class="card-text-img">2시간 2분 • 12세</p>
+        <p class="card-text-img">
+          <small>예매 순위 1위(24%) • 개봉 11일째 • 누적 관객 86.7만명</small>
+        </p>
+      </div>
+    </div>
+    <div class="card mb-3" style="max-width: 800px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://i.namu.wiki/i/QZyW_xJX2br6BKf16Kd0HdWGds667wEHHeBDv6bSYqjZo7PmB0pr2f53thM5aOMeth_zx9ClITrNI6QEC-V7PgrCjQwYBHzzzxnyLcdtvQs9JJihXiy0aAgKup5Sc0rRx8Mvb0EtEtM-ZVyP7KH8tg.webp"
+            class="img-fluid"
+            alt="..."
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <p class="card-text-detail">
+              <p>반드시 돌아가야 한다. 모두를 지키기 위해!</p> 
+              <p>인간의 몸속에 가둬진
+              외계인 죄수의 탈옥을 막으려다 과거에 갇혀버린 ‘이안’(김태리)은
+              우여곡절 끝에 시간의 문을 열 수 있는 ‘신검’을 되찾고,
+              ‘썬더’(김우빈)를 찾아 자신이 떠나온 미래로 돌아가려고 한다. 한편
+              이안을 위기의 순간마다 도와주는 ‘무륵’(류준열)은 자신의 몸속에
+              느껴지는 이상한 존재에 혼란을 느낀다. 그런 ‘무륵’ 속에 요괴가
+              있다고 의심하는 삼각산 두 신선 ‘흑설’(염정아)과 ‘청운’(조우진),
+              소문 속 신검을 빼앗아 눈을 뜨려는 맹인 검객 ‘능파’(진선규), 신검을
+              차지하려는 ‘자장’(김의성)까지 ‘이안’과 ‘무륵’을 쫓기 시작한다.</p>
+              한편 현대에서는, 탈옥한 외계인 죄수 ‘설계자’가 폭발 시킨 외계물질
+              ‘하바’로 인해 수많은 사람들이 죽고, 우연히 외계인을 목격한
+              ‘민개인’(이하늬)은 이 사건을 파헤치기 시작한다. 모든 하바가
+              폭발하기까지 남은 시간은 단 48분, 시간의 문을 열고 무륵, 썬더, 두
+              신선과 함께 현재로 돌아온 이안. 마침내 모든 비밀이 밝혀진다!
+            </p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="carousel-box mb-5">
+          <h4 class="carousel-box-title">갤러리</h4>
+          <section class="pt-4 pb-5 d-flex justify-content-center w-100">
+          <div class="multi-carousel" id="carousel" data-mdb-multi-carousel-init="">
+              <div class="multi-carousel-inner">
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/inM5TDpp36bBcPA53oTu1A.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01qa3hPREU1TWpjNU5EQXdNamszTVNJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuV091aDhTc1VOXy12OEI5TEtwVzB4NzA1WURDSVRTN2RrTE10dTRLaHdIQQ" class="w-100">
+              </div>
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/QwbddgUOxLRBrdVBh84UoA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01USTBOVGszTlRrNE1EZzFOelE0TkNJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuSzY5WUF6cWtSc09TVTNoeXAzS2cwWTFabHlvVG03NGF0VmN5ZC1xVkhaZw" class="w-100">
+              </div>
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/Afa5sUiJdeBb3gKje05T0w.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01USTBOVGszTlRZNU5EZzJOREE1T0NJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuSlV2WlMxZWhmYlppY3Zmdm03WmZHaUlFLU1qbkNGbUJsY2I3dlVybEgxbw" class="w-100">
+              </div>
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/vHemmp9ihG3d-LT_j9sJFQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01qa3hPREU1TXpFd016TTNOREExTlNJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuSy1qZEp1UXQ4YnZ2YUJCUmF3WHIwb3pXSGp1ZXJ5LXJLNk5zWVJjcXBLNA" class="w-100">
+              </div>
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/9w91MF6d_ERH6AwJDiPMiw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01USTBOVGszTmpjeU5UVTBORFl5TWlJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuS0c1VVVkM2lUQWVKaGNwVzN0Vzdvd2pucmFtVHdKdWRJQkVxVk5vdEZ6bw" class="w-100">
+              </div>                        
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/mA--g_EETMP4kLGSVi_ylQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01USTBOVGszTlRNMk5qQTBOekU1TXlJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEuN2dhZm1lNHhqUUlsbUcxYmhWYnBYVTN4R2FrWFNqWk5jQncybDgzZTdpYw" class="w-100">
+              </div>                        
+              <div class="multi-carousel-item">
+                  <img src="https://an2-img.amz.wtchn.net/image/v2/2kLOS130MNs4-KywkysTtg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1KbklsMHNJbkFpT2lJdmRqSXZjM1J2Y21VdmFXMWhaMlV2TVRjd01USTBOVGszTlRBMk5UWTNNekU0TnlJc0luRWlPamd3TENKM0lqb3hPVEl3ZlEudEFSVkJmREFFNE9nUkdVUFcxVmRnblNFZ1NEQlgycmVqOHZLVF9fRVloSQ" class="w-100">
+              </div>                        
+                       
+              </div>
+              <button class="multi-carousel carousel-control-prev" type="button" tabindex="0" data-mdb-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <button class="multi-carousel carousel-control-next" type="button" tabindex="0" data-mdb-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+          </div>
+          </section>
+      </section>
+      
+      <h4 class="box-title">비슷한 작품</h4>
+      <div class="row">
+        <div class="col-md-2 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/kSpxlQXUl9m7EiD2OMUsNQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk5UY3dOelExT0RBME5EQXlOakk0TXpNaWZRLmgwSHE1REZsODk0czlKajVHLW1uSE96TW5sM3VrbGI2MGkzQi1VeVNfa3c" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">외계+인 1부</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4" >
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/VbbFcUnMLG5leHV6CUIrpQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXhMMlZ2WlhodGVXRmtZVE5pYUc1emRubDVkVzkzSW4wLmNweXZOX2RERWtTUVdJTzVvUzJ1LVR3dUFtNHRRT2ZyT3RsU1VwdjdjZzA" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/s1WtYTmmb-LItzrTITFYkw.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk1EazNNakF5T0RFeU5UVTFOVEEzTWpraWZRLlZsc1E3Tm9tZGVHclNKZERFOXlUOU9XLUJXU0J6MFVUemZaTWlPYTJMVHM" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/kL5YqCNOtXarjNTdXgOYuA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk1EazNNakF4T0RReE1qRXhNVGd3TnpFaWZRLjBqSUVXSHg2eVVGLXJuVHluZEdOdTVPRHBJUW1fZ3FpRmcwM0l6aEZDd2c" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/dDztUCBL-BKDsfdIWEouiA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk9UTTVPRFl3TmpVM056azRNRFE0TlRBaWZRLlgxLUdGU2otNlBnbXhNOENJX0hOeFJhOFo0N1J2bEFOajRGUlRHcTB5QTA" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="https://an2-img.amz.wtchn.net/image/v2/4lhZER5qgeIhzMzzpimQHQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHpFMk1UQTJNRGc1T0RJek56UTROemt5TmpraWZRLmdTQ2tjTF9KU3hySjJOQkRtMzhaeWprdVFUdjZ0SjNNZm8yTi1nWXhxY28" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -29,5 +208,10 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/97aea18dfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>
