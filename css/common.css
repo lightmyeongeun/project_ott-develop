@@ -1,0 +1,85 @@
+@charset "utf-8";
+body{
+    color: #1b1b1b;
+    overflow-x: hidden;
+}
+
+
+/* header */
+#header{
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    z-index: 2000;
+    width: 100%;
+    position:fixed;
+}
+
+.container-fluid{
+    padding: 0 50px;
+}
+
+.navbar{
+    padding: 15px 0;
+}
+
+
+.nav-item a{
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav-item{
+    padding: 0 20px;
+}
+
+.d-flex button.border-none{
+    border: none;
+}
+
+.fa-magnifying-glass, .fa-user{
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.search-bar a{
+    color: #000;
+}
+
+/* footer */
+footer{
+    background-color: #f7f7f7;
+}
+
+footer .container h5{
+    font-weight: 800;
+}
+
+footer .container .text-muted{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+footer .container .text-grey{
+    font-size: 14px;
+    color: #909090;
+    margin-bottom: 5px;
+}
+
+footer .footer_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .nav-item a{
+    font-weight: 600;
+}
+
+/* 미디어쿼리 - 반응형*/
+@media screen and (max-width:767.98px){
+    footer .footer_box{display: block;}
+}
+
+@media screen and (max-width:575.98px){
+    footer .footer_box .row:last-child{display: block;}
+}

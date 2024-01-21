@@ -1,1 +1,199 @@
 @charset "utf-8";
+
+#container{
+    margin: 0 80px;
+}
+
+section{
+    margin-bottom: 70px;
+}
+
+
+/* 롤링배너 */
+.carousel{
+    padding-top: 96px;
+}
+.carousel_wrap{
+    width: 100%;
+}
+
+.carousel-box section{
+    position: relative;
+}
+
+.carousel-inner{
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 롤링 화살표 */
+.visual .carousel-control-prev,
+.multi-carousel .carousel-control-prev, 
+.open .carousel-control-prev{
+    justify-content: flex-start;
+}
+
+.visual .carousel-control-next,
+.multi-carousel .carousel-control-next, 
+.open .carousel-control-next{
+    justify-content: flex-end;
+}
+
+
+/* 롤링배너 이미지 및 내용 */
+.inner-title{
+    position: absolute;
+    bottom: 180px;
+    left: 100px;
+}
+
+.inner-txt{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #fff;
+    white-space: pre-wrap;
+}
+
+.inner-txt.last{
+    bottom: 60px;
+}
+
+.inner-txt.one{
+    bottom: 140px;
+    font-size: 22px;
+}
+
+
+/* 개봉관 순위 배너 */
+.multi-carousel .multi-carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item {
+    display: inline-block;
+    width: 100%;
+    font-size: 16px;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    padding: 0 3px
+}
+
+.multi-carousel .multi-carousel-inner .multi-carousel-item img {
+    max-height: 320px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+/* 포스터 영역 */
+.box-title{
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.card{
+    position: relative;
+}
+
+.card .num {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(222, 15, 0, 0.8);
+}
+
+.card .ott-icon{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.card .ott-icon.two{
+    right: 44px;
+    font-weight: 600;
+}
+
+.card .ott-icon.tving{
+    background: url(../image/main/tving.png) no-repeat;
+}
+
+.card .ott-icon.netflix{
+    background: url(../image/main/netflix.png) no-repeat;
+}
+
+.card .ott-icon.watcha{
+    background: url(../image/main/watcha.png) no-repeat;
+}
+
+
+.card{
+    border: 0;
+}
+.card .card-body{
+    padding: 20px 0;
+}
+
+.card-body .card-title{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-body .card-subtitle{
+    font-size: 15px;
+    padding-top: 8px;
+}
+
+.card-body .card-text{
+    font-size: 15px;
+    color: #808080;
+    padding-top: 8px;
+}
+
+
+/* 미디어 쿼리 - 반응형 */
+@media (max-width: 1199.98px){
+    .inner-title{
+        width: 280px;
+    }    
+
+}
+
+@media (max-width: 991.98px){
+    .inner-title{
+        bottom: 30px;
+        left: 60px;
+    }
+    
+    .inner-txt{
+        display: none;
+    }
+
+}
+
